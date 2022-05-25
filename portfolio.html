@@ -17,14 +17,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Portfolioo</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <a class="logo header__logo" href=""
-          >Web<span class="logo__word">Studio</span></a
+        <a class="logo header__logo link" href=""
+          >Web<span class="logo__word--dark">Studio</span></a
         >
         <nav class="navigation">
           <ul class="menu-list list">
@@ -32,14 +33,14 @@
               <a href="index.html" class="menu-list__link link">Студия</a>
             </li>
             <li class="menu-list__item">
-              <a href="./portfolio.html" class="menu-list__link link link-portfolio">Портфолио</a>
+              <a href="./portfolio.html" class="menu-list__link link link-portfolio--activity">Портфолио</a>
             </li>
             <li class="menu-list__item">
               <a href="" class="menu-list__link link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <div class="connect">
+        <div class="connect header__connect">
           <a class="connect__mailto link" href="mailto:info@devstudio.com">
             <svg class="connect__icon" width="16" height="12">
               <use href="./images/icons2.svg#icon-envelope-1"></use>
@@ -57,7 +58,7 @@
     <main>
       <section class="offer">
         <div class="container">
-          <h1 class="offer-title">Разные предложения</h1>
+          <h1 class="offer-title visually-hidden">Разные предложения</h1>
           <ul class="offer-list list">
             <li class="offer-item">
               <button type="button" class="offer-btn">Все</button>
@@ -200,46 +201,46 @@
     <footer class="footer">
       <div class="container">
         <div class="address">
-          <a class="footer-logo" href=""
-            >Web<span class="footer-logo-color">Studio</span></a
+          <a class="logo footer__logo link" href=""
+            >Web<span class="logo footer__logo--light">Studio</span></a
           >
-          <address class="adress">
-            <p class="address-text">г. Киев, пр-т Леси Украинки</p>
-            <a class="address-mailto link" href="mailto:info@devstudio.com"
+          <address class="address footer__address">
+            <p class="address__text">г. Киев, пр-т Леси Украинки</p>
+            <a class="address__mailto link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
-            <a class="address-tel link" href="tel:+380991111111"
+            <a class="address__tel link" href="tel:+380991111111"
               >+38 099 111 11 11</a
             >
           </address>
         </div>
         <div class="join">
-          <p class="join-text">присоединяйтесь</p>
-          <ul class="join-list list">
-            <li class="join-item">
-              <a href="" class="join-soc-link">
-                <svg class="join-soc-icon" widht="20" height="20">
+          <p class="join__text">присоединяйтесь</p>
+          <ul class="join__list list">
+            <li class="join__item">
+              <a href="" class="join__link">
+                <svg class="join__icon" widht="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-item">
-              <a href="" class="join-soc-link">
-                <svg class="join-soc-icon" widht="20" height="20">
+            <li class="join__item">
+              <a href="" class="join__link">
+                <svg class="join__icon" widht="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-item">
-              <a href="" class="join-soc-link">
-                <svg class="join-soc-icon" widht="20" height="20">
+            <li class="join__item">
+              <a href="" class="join__link">
+                <svg class="join__icon" widht="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-item">
-              <a href="" class="join-soc-link">
-                <svg class="join-soc-icon" widht="20" height="20">
+            <li class="join__item">
+              <a href="" class="join__link">
+                <svg class="join__icon" widht="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -248,24 +249,24 @@
         </div>
       </div>
       <section class="signature container">
-        <form class="signature-form">
-          <div class="signature-field">
+        <form class="signature__form">
+          <div class="signature__field">
             <label 
-              class="signature-text" 
+              class="signature__text" 
               for="user-signature">Подпишитесь на рассылку
             </label>
             <input 
               type="text"
-              class="signature-input"
+              class="signature__input"
               name="user-signature"
               id="user-signature"
               placeholder="E-mail">
             <button 
               type="submit" 
-              class="button-send">Подписаться
+              class="signature__button">Подписаться
             </button>
             <svg 
-              class="mark-send" 
+              class="signature__mark" 
               width="24" 
               heigt="24">
             <use href="./images/icons4.svg#icon-icon-send"></use>
